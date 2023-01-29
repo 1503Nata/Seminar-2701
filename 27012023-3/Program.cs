@@ -1,7 +1,7 @@
-﻿// Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
+﻿Console.WriteLine("Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.");
 
 // [3 7 22 2 78] -> 76
-
+Console.WriteLine( );
 Console.WriteLine("Задайте размер масcива:  ");
 int size;
 while (!Int32.TryParse(Console.ReadLine(), out size) || size==0)
@@ -10,7 +10,6 @@ double[] array = new double[size];
 FullArray(array);
 Console.WriteLine("Массив по заданным условиям сформирован: ");
 PrintArray(array);
-Console.WriteLine( );
 double resmax = array[0];
 double resmin = array[0];
 ArgMax(array);
