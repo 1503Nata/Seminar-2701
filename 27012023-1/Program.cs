@@ -3,8 +3,8 @@
 Console.WriteLine();
 Console.WriteLine("Задайте размер масcива:  ");
 int size;
-while (!Int32.TryParse(Console.ReadLine(), out size))
-    Console.Write("Неправильный ввод. Введите целое число: ");
+while (!Int32.TryParse(Console.ReadLine(), out size) || size==0)
+    Console.Write("Неправильный ввод. Введите целое положительное число: ");
 int[] array = new int[size];
 FullArray(array);
 Console.WriteLine("Массив по заданным условиям сформирован: ");
